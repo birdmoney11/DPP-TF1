@@ -1,1 +1,7 @@
 Phase 1 folder contains all the scripts related to photo scraping and resize / crop
+
+
+Center crop script is a modification of source code: https://gist.github.com/Nannigalaxy/35dd1d0722f29672e68b700bc5d44767
+
+RedditImageScraper source code:
+https://github.com/ClarityCoders/RedditImageScraper/blob/main/README.md

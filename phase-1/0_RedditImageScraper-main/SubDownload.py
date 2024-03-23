@@ -7,19 +7,6 @@ import pickle
 
 from utils.create_token import create_token
 
-#posts per day
-#r/pics - 124
-#r/funny - 29
-#r/aww - 104
-#r/itookapicture - 71 
-#r/food - 45
-#r/Art - 133
-#r/EarthPorn - 45
-#r/mildlyinteresting - 75
-#r/gaming- 60
-#r/food - 45
-#r/Memes - 141
-
 POST_SEARCH_AMOUNT = 1000
 
 # Create directory if it doesn't exist to save images
@@ -52,7 +39,6 @@ reddit = praw.Reddit(client_id=creds['client_id'],
                     username=creds['username'],
                     password=creds['password'])
 
-
 f_final = open("sub_list.csv", "r")
 img_notfound = cv2.imread('imageNF.png')
 for line in f_final:
@@ -68,7 +54,7 @@ for line in f_final:
                 image = np.asarray(bytearray(resp.read()), dtype="uint8")
                 image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
-                #rescale image to 20%
+                #rescale image to 25%
                 scale_percent = 25
                 width = int(image.shape[1] * scale_percent / 100)
                 height = int(image.shape[0] * scale_percent / 100)

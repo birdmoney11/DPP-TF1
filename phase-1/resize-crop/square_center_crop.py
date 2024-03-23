@@ -102,10 +102,9 @@ for img_f in img_list:
 print("Finished for loop!")
 cv2.destroyAllWindows()  
 
-
+## export img array to .npy
 print("Begin output to .npy")
 # .npy file 
-
 np.save('output.npy', img_arr)
 # labels    
 np.save('labels.npy', label_arr)

@@ -106,6 +106,7 @@ print("Finished for loop!")#
 cv2.destroyAllWindows()  
 
 ## export img array to .npy
+print("Begin output to .npy")
 np.save('output.npy', img_arr)
 # export labels    
 np.save('labels.npy', label_arr)
